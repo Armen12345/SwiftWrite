@@ -1,0 +1,7 @@
+Type=Application
+Categories=Office
+Name=SwiftWrite
+Comment=Simple text editor
+Path=~/.local/swiw/
+Exec=app.py
+Version=0.2/Beta
