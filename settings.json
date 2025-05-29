@@ -1,5 +1,4 @@
 {
-  "autoupdate": true,
-  "font": "Arial",
-  "ver": 0.1
+  "autoupdate": false,
+  "font": "Arial"
 }
