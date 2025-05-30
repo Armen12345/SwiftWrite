@@ -13,10 +13,10 @@ try:
   with open("settings.json", "r") as f:
     settings = json.load(f)
 except FileNotFoundError:
-  showerror(title="SwiftPad: Error 001", message="'settings.json' file not found.")
+  showerror(title="SwiftWrite: Error 001", message="'settings.json' file not found.")
   sys.exit()
 except json.JSONDecodeError:
-  showerror(title="SwiftPad: Error 002", message="Could not decode 'settings.json'. Ensure it contains valid JSON.")
+  showerror(title="SwiftWrite: Error 002", message="Could not decode 'settings.json'. Ensure it contains valid JSON.")
   sys.exit()
 
 def print_document():
@@ -35,11 +35,11 @@ def print_document():
       elif system == "Linux" or system == "Darwin" or system == "FreeBSD" or system == "OpenBSD":
         sub.run(["lp", temp_filepath])
       else:
-        showerror(title="SwiftPad: Error 003", message="Unknown operating system")
+        showerror(title="SwiftWrite: Error 003", message="Unknown operating system")
     except Exception as e:
-      showerror(title="SwiftPad: Error 004", message=f"An error occurred while printing: {e}")
+      showerror(title="SwiftWrite: Error 004", message=f"An error occurred while printing: {e}")
   else:
-    showinfo(title="SwiftPad: Error 005", message="Nothing to print.")
+    showinfo(title="SwiftWrite: Error 005", message="Nothing to print.")
 
 def read_file():
   # Function to open a file and display its contents
@@ -52,7 +52,7 @@ def read_file():
       text.insert("1.0", content)
       return filepath
     except Exception as e:
-      showerror("SwiftPad: Error 006", f"An error occurred while opening the file: {e}")
+      showerror("SwiftWrite: Error 006", f"An error occurred while opening the file: {e}")
 
 def save_as():
   # Function to save the current text to a file
@@ -62,12 +62,12 @@ def save_as():
       with open(filepath, 'w', encoding='utf-8') as f:
         f.write(text.get("1.0", END))
     except Exception as e:
-      showerror("SwiftPad: Error 007", f"An error occurred while saving the file: {e}")
+      showerror("SwiftWrite: Error 007", f"An error occurred while saving the file: {e}")
 
 def find_text():
   # Create a new Toplevel window for search
   find_window = Toplevel(r)
-  find_window.title("SwiftPad: Find")
+  find_window.title("SwiftWrite: Find")
   find_window.transient(r)
   find_window.resizable(False, False)
   
@@ -102,7 +102,7 @@ def find_text():
     nonlocal search_indices, current_index
     term = search_var.get()
     if not term:
-      showinfo("SwiftPad: Search", "Please enter a search term.")
+      showinfo("SwiftWrite: Search", "Please enter a search term.")
     if not search_indices:
       # First search, find all matches
       start_pos = '1.0'
@@ -116,7 +116,7 @@ def find_text():
         start_pos = end_pos
       text.tag_config('highlight', background='yellow')
       if not search_indices:
-        showinfo("SwiftPad: Search", "No matches found.")
+        showinfo("SwiftWrite: Search", "No matches found.")
     # Navigate through matches
     if direction == 'next':
       current_index = (current_index + 1) % len(search_indices)
@@ -146,7 +146,7 @@ def find_text():
 
 # Create the main application window
 r = Tk()
-r.title("SwiftPad")
+r.title("SwiftWrite")
 
 # Create a frame for the Text widget and Scrollbar
 text_frame = Frame(r)
