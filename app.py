@@ -32,7 +32,7 @@ def print_document():
     try:
       if system == "Windows":
         os.startfile(temp_filepath, "print")
-      elif system == "Linux" or system == "Darwin":
+      elif system == "Linux" or system == "Darwin" or system == "FreeBSD" or system == "OpenBSD":
         sub.run(["lp", temp_filepath])
       else:
         showerror(title="SwiftPad: Error 003", message="Unknown operating system")
@@ -103,7 +103,6 @@ def find_text():
     term = search_var.get()
     if not term:
       showinfo("SwiftPad: Search", "Please enter a search term.")
-      return
     if not search_indices:
       # First search, find all matches
       start_pos = '1.0'
@@ -118,7 +117,6 @@ def find_text():
       text.tag_config('highlight', background='yellow')
       if not search_indices:
         showinfo("SwiftPad: Search", "No matches found.")
-        return
     # Navigate through matches
     if direction == 'next':
       current_index = (current_index + 1) % len(search_indices)
