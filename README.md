@@ -7,6 +7,9 @@ Settings can be changed from file "settings.json". Keys are:
     "font" - standard font. Default value is "Arial". Currently dosen't work.
     "updatecheckinterval" - interval of update checking. Default value is "onrun". Currently is a concept.
 
+# Plans for future
+There are plans to expand SwiftWrite into a full-fledged word processor.
+
 # Screenshots
 ## SwiftWrite on Windows 10
 <img src="Screenshots/SwiftWrite on Windows 10.png">
