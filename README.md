@@ -2,7 +2,7 @@
 SwiftWrite is cross-platform program, and works on any OS with support of Python 3.1 or high and Tkinter, but document printing supported only on Darwin-based OS (for example macOS, OpenDarwin, and others), FreeBSD, Windows, OpenBSD, and Linux. Released in 28/02/2025 (Alpha). Uses MIT License.
 
 # How to install
-For Linux-based systems there are two scripts for installing. They have "run-<distribution name>.sh" name syntax. For Windows there are "sed" script, but currently build dosen't avalible, but you can build it manualy with build instructions.
+For Linux-based systems there are two scripts for installing. They have run-"distribution name".sh name syntax. For Windows there are "sed" script, but currently build dosen't avalible, but you can build it manualy with build instructions.
 
 # Documentation
 ## Settings
