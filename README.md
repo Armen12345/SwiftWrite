@@ -11,17 +11,29 @@ Settings can be changed from file "settings.json". Keys are:
     "updatecheckinterval" - interval of update checking. Default value is "onrun". Currently is a concept.
 <h2 align="center">How to build manualy (for Windows)</h2>
 1. Download source code,
+<br>
 2. Extract it to "C:\SwiftWrite" path,
+<br>
 3. Press Windows + R on your keyboard,
+<br>
 4. On opened window enter "iexpress",
+<br>
 5. Press "Enter",
+<br>
 6. On opened window choose "Open existing Self Extraction Directive file:",
+<br>
 7. Click "Browse" button,
+<br>
 8. Choose the "sed" script,
+<br>
 9. Press "Next",
+<br>
 10. Choose "Create Package.",
+<br>
 11. Press "Next",
+<br>
 12. Press "Next",
+<br>
 13. Wait to build complete.
 <h1 align="center">Plans for future</h1>
 There are plans to expand SwiftWrite into a full-fledged word processor.
