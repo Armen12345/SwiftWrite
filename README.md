@@ -1,6 +1,6 @@
 <p align="center"><img src="icon.jpg"></p>
 <h1 align="center">SwiftWrite</h1>
-SwiftWrite is cross-platform program, and works on any OS with support of Python 3.0 or high and Tkinter, but document printing supported only on Darwin-based OS (for example macOS, OpenDarwin, and others), FreeBSD, Windows, OpenBSD, and Linux. Released in 28/02/2025 (Alpha). Uses MIT License.
+SwiftWrite is cross-platform program, and works on any OS with support of Python 3.5 or high and Tkinter, but document printing supported only on Darwin-based OS (for example macOS, OpenDarwin, and others), FreeBSD, Windows, OpenBSD, and Linux. Released in 28/02/2025 (Alpha). Uses MIT License.
 <h1 align="center">How to install</h1>
 For Unix-like systems there are five scripts for installing. They have run-"distribution name".sh name syntax. If script for installing for your distribution is missing, run "run-universal.sh" script. Before running "run-universal.sh" script make sure, that you installed Python and PIP on your system. If all dependencies already installed, run "run-universal-wdia.sh". For Windows there are "sed" script, offical build avalible on release, but it can be builded manualy too with instruction⬇.
 <h1 align="center">Documentation</h1>
