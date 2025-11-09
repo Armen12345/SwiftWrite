@@ -35,8 +35,6 @@ Settings can be changed from file "settings.json". Keys are:
 12. Press "Next",
 <br>
 13. Wait to build complete.
-<h1 align="center">Plans for future</h1>
-There are plans to expand SwiftWrite into a full-fledged word processor.
 <h1 align="center">Screenshots</h1>
 <h2 align="center">SwiftWrite on Windows 10</h2>
 <p align="center"><img src="Screenshots/SwiftWrite on Windows 10.png"></p>
