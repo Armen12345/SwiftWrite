@@ -6,8 +6,11 @@ For Unix-like systems there are five scripts for installing. They have run-"dist
 <h1 align="center">Documentation</h1>
 <h2 align="center">Settings</h2>
 Settings can be changed from file "settings.json". Keys are:
+<br>
     "autoupdate" - automaticaly download and install avalible updates. Default value is false. Currently is a concept.
+<br>
     "font" - standard font. Default value is "Arial". Currently dosen't work.
+<br>
     "updatecheckinterval" - interval of update checking. Default value is "onrun". Currently is a concept.
 <h2 align="center">How to build manualy (for Windows)</h2>
 1. Download source code,
